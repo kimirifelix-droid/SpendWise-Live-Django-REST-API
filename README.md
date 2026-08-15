@@ -28,6 +28,17 @@ Testing and CI:
 - Run tests locally: `python manage.py test`
 - CI configured in `.github/workflows/ci.yml` to run tests on push/PR.
 
+Docker (optional):
+Build and run with Docker and docker-compose:
+
+```bash
+docker build -t spendwise:latest .
+docker-compose up --build
+```
+
+The app will be available at http://localhost:8000/ when the container is running.
+
+
 Grading checklist:
 - API with `Expense` model and per-user `owner` field — implemented.
 - Token auth at `/api/login/` and authenticated endpoints — implemented.

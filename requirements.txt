@@ -1,5 +1,6 @@
 
-Django>=4.2
-djangorestframework
-django-cors-headers
-django-filter
+gunicorn==20.1.0
+Django==6.1
+djangorestframework==3.18.0
+django-cors-headers==4.9.0
+django-filter==26.1
